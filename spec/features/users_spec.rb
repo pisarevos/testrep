@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe '/users' do
+describe '/users', js: true do
   before do
     visit '/users'
   end

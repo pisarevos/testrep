@@ -8,6 +8,9 @@ rvm install ruby-2.3.0
 rvm use ruby-2.3.0
 rvm gemset create automation
 rvm gemset use automation
+
+sudo apt-get install -y sqlite3 libsqlite3-dev
+
 gem install bundle
 bundle install
 rake db:create
