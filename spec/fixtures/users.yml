@@ -1,7 +1,9 @@
 one:
   username: user1
   email: user1@email.com
+  encrypted_password: "$2a$11$W3P3G0eSuo4KTSoQnhJZTu8yYy3XmV6mZW46hVNr5WVTV7ITMbQ6C"
 
 two:
   username: user2
   email: user2@email.com
+  encrypted_password: "$2a$11$W3P3G0eSuo4KTSoQnhJZTu8yYy3XmV6mZW46hVNr5WVTV7ITMbQ6C"
