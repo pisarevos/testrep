@@ -1,0 +1,15 @@
+<tr>
+  <td><%= user.username %></td>
+  <td><%= user.email%></td>
+  <td>
+    <%- if user_signed_in? %>
+      <% if current_user.friend_with?(user) %>
+        <%= link_to 'Remove from Friends', delete_friend_user_path(user), method: :delete, class: 'btn btn-danger' %>
+        <%= link_to 'Send a Message', new_message_path(user_id: user.id), class: 'btn btn-success' %>
+      <%- else -%>
+            <%= link_to 'Add Friend', new_friend_user_path(user), method: :post, class: 'btn btn-primary' %>
+
+      <% end %>
+    <% end %>
+  </td>
+</tr>

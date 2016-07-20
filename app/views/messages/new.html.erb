@@ -1,0 +1,9 @@
+<h1>Send a Message</h1>
+
+
+<%= bootstrap_form_for(@message) do |f| %>
+    <%= f.hidden_field :to %>
+    <%= f.text_area :body %>
+
+    <%= f.submit "Send" %>
+<% end %>
